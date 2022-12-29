@@ -98,11 +98,11 @@ body {
 
 .exp .circulo {
     background: #0f1656;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     position: absolute;
-    left: -10.5px;
+    left: -7.6px;
 }
 
 .listaExp {
