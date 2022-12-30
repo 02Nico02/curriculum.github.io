@@ -79,7 +79,7 @@ body {
 }
 
 .listaDatos i {
-    color: blue;
+    color: #6610f2;
     min-width: 17px;
     font-size: 18px;
 }
@@ -105,12 +105,111 @@ body {
     left: -7.6px;
 }
 
+.exp ul,
+.exp p {
+    transition: 2s;
+}
+
+.listaAcademic {
+    list-style-type: disclosure-closed;
+    padding: 0;
+}
+
+.listaAcademic h6 {
+    FONT-WEIGHT: bold;
+    margin-bottom: 2px;
+}
+
+.listaAcademic .anio {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    FONT-WEIGHT: bold;
+}
+
 .listaExp {
     list-style-type: disclosure-closed;
     padding: 0;
+
+    transition: 2s;
+}
+
+.exp:hover>.listaExp {
+    font-size: 1rem;
+}
+
+.exp:hover>p {
+    margin-bottom: 1rem;
 }
 
 .listaExp li {
     margin-bottom: 7px;
     text-align: justify;
+}
+
+.listaAcademic p {
+    transition: 2s;
+}
+
+.exp:hover>.listaAcademic p {
+    font-size: 1rem;
+}
+
+
+.progress100 {
+    background: #6610f2;
+}
+
+.progress75 {
+    background: #6610f2bd;
+}
+
+.progress50 {
+    background: #6610f27d;
+}
+
+.progress25 {
+    background: #6610f22b;
+}
+
+#btnUbi {
+    cursor: pointer;
+}
+
+#btnUbi:hover p {
+    text-decoration-line: underline;
+}
+
+.icon-dato {
+    display: flex;
+}
+
+.icon-dato p {
+    margin-bottom: 0;
+    margin-left: 4px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+@media screen and (min-width: 992px) {
+    .exp p {
+        margin-bottom: 0;
+    }
+
+    .listaExp {
+        font-size: 0;
+    }
+
+    .listaAcademic p {
+        font-size: 0;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    iframe {
+        width: 100%;
+        height: 450px;
+    }
 }
