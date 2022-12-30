@@ -51,6 +51,7 @@ body {
 
 .profecionalismo {
     text-align: end;
+    margin-bottom: 20px;
 }
 
 .tituloContenido {
@@ -193,7 +194,68 @@ iframe {
     height: 450px;
 }
 
+.col-derecho {
+    display: none;
+}
+
+.izquierda {
+    display: none;
+}
+
+.min-1000 {
+    display: block;
+}
+
+.max-1000 {
+    display: none;
+}
+
 @media screen and (min-width: 992px) {
+
+    /* .col-izquierda {
+        display: grid;
+        grid-template-columns: min-content;
+        margin: 0;
+        grid-gap: 20px;
+        grid-template-areas: "img-nombre img-nombre"
+            "profecionalismo profecionalismo"
+            "h2DatosPersonales sobreMi"
+            "h2DatosPersonales workExperience"
+            "h2DatosPersonales workExperience"
+            "h2DatosPersonales Academic";
+    } */
+    .col-derecho {
+        display: block;
+    }
+
+    .izquierda {
+        display: block;
+    }
+
+    .min-1000 {
+        display: none;
+    }
+
+    .img-nombre {
+        grid-area: img-nombre;
+    }
+
+    .profecionalismo {
+        grid-area: profecionalismo;
+    }
+
+    #sobreMi {
+        grid-area: sobreMi;
+    }
+
+    #workExperience {
+        grid-area: workExperience;
+    }
+
+    #Academic {
+        grid-area: Academic;
+    }
+
     .exp p {
         margin-bottom: 0;
     }
@@ -204,12 +266,5 @@ iframe {
 
     .listaAcademic p {
         font-size: 0;
-    }
-}
-
-@media screen and (max-width: 620px) {
-    iframe {
-        width: 100%;
-        height: 450px;
     }
 }

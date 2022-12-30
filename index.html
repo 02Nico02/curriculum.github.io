@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/e480f6dd1b.js" crossorigin="anonymous"></script>
     <title>Curriculum Vitae</title>
+    <!-- Open Graph data -->
+    <meta property="og:title" content="The Rock" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://02nico02.github.io/curriculum.github.io/" />
+    <meta property="og:image" content="./images/img-previa-curriculum.png" />
+    <meta property="og:description" content="Curriculum Vitae" />
 </head>
 
 <body>
@@ -23,13 +29,14 @@
         <div class="profecionalismo">
             <h4>Desarrollador web</h4>
         </div>
-        <div class="divPerfile">
+        <div id="sobreMi" class="divPerfile">
             <div class="tituloContenido">
                 <h5>Sobre mí</h5>
                 <div class="linea"></div>
             </div>
             <p class="container">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, atque obcaecati aperiam illum id
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, atque obcaecati aperiam illum
+                id
                 modi inventore, deserunt laboriosam error ipsa, eligendi adipisci in consequuntur commodi numquam.
                 Sapiente doloribus minima recusandae.
             </p>
@@ -104,12 +111,13 @@
                         <p id="email">-</p>
                     </div>
                 </li>
-                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a> <a
-                        href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a
-                        href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://ar.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> <a
+                        href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </li>
             </ul>
         </div>
-        <div class="divWorkExperience">
+        <div id="workExperience" class="divWorkExperience">
             <div class="tituloContenido">
                 <h5><i class="fa-solid fa-briefcase"></i> Experiencia laboral</h5>
                 <div class="linea"></div>
@@ -131,9 +139,11 @@
                 <ul class="listaExp">
                     <li>Realicé el mantenimiento preventivo y correctivo de la instalación para asegurar la correcta
                         operatividad de esta.</li>
-                    <li>Gestioné los documentos oficiales de descarga, así como las comunicaciones con los mandos de la
+                    <li>Gestioné los documentos oficiales de descarga, así como las comunicaciones con los mandos de
+                        la
                         tripulación.</li>
-                    <li>Realicé las funciones relativas a la seguridad, para la prevención de riesgos laborales.</li>
+                    <li>Realicé las funciones relativas a la seguridad, para la prevención de riesgos laborales.
+                    </li>
                 </ul>
             </div>
             <div class="exp">
@@ -147,7 +157,7 @@
                 </ul>
             </div>
         </div>
-        <div class="divAcademic">
+        <div id="Academic" class="divAcademic">
             <div class="tituloContenido">
                 <h5><i class="fa-solid fa-graduation-cap"></i> Formación académica</h5>
                 <div class="linea"></div>
@@ -211,18 +221,6 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </li>
-                <li><b>HTML</b>
-                    <div class="progress">
-                        <div class="progress-bar progress50" role="progressbar" style="width: 50%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </li>
-                <li><b>css</b>
-                    <div class="progress">
-                        <div class="progress-bar progress50" role="progressbar" style="width: 50%" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                </li>
                 <li><b>Python</b>
                     <div class="progress">
                         <div class="progress-bar progress100" role="progressbar" style="width: 90%" aria-valuenow="100"
@@ -241,15 +239,21 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </li>
-                <li><b>smalltalk</b>
+                <li><b>HTML</b>
                     <div class="progress">
-                        <div class="progress-bar progress50" role="progressbar" style="width: 40%" aria-valuenow="100"
+                        <div class="progress-bar progress50" role="progressbar" style="width: 50%" aria-valuenow="100"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </li>
-                <li><b>android studio</b>
+                <li><b>css</b>
                     <div class="progress">
-                        <div class="progress-bar progress25" role="progressbar" style="width: 25%" aria-valuenow="100"
+                        <div class="progress-bar progress50" role="progressbar" style="width: 50%" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li><b>smalltalk</b>
+                    <div class="progress">
+                        <div class="progress-bar progress50" role="progressbar" style="width: 40%" aria-valuenow="100"
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </li>
@@ -265,18 +269,14 @@
                             aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </li>
+                <li><b>android studio</b>
+                    <div class="progress">
+                        <div class="progress-bar progress25" role="progressbar" style="width: 25%" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
             </ul>
         </div>
-        <!-- <div class="datos-personales">
-            <label>Dirección</label>
-            <p>Calle del Prado 619</p>
-            <label>Ciudad</label>
-            <p>Santa Cruz de Tenerife</p>
-            <label>Estado</label>
-            <p>Cantabria</p>
-            <label>Pais</label>
-            <p>Spain</p>
-        </div> -->
     </div>
     <div class="fondo">
         <img src="./images/fondo-azul.jpg" alt="Fondo azul">

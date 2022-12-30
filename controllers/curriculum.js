@@ -1,12 +1,8 @@
-const btnModal = document.getElementById("btnUbi").addEventListener("click", () => {
-    modalMapa()
-});
-console.log(new Date("10/03/1994"))
 
 fetch('https://randomuser.me/api/?nat=ES')
     .then(response => response.json())
     .then(data => {
-        document.getElementById("img-user").src = data.results[0].picture.medium
+        document.getElementById("img-user").src = data.results[0].picture.large
         document.getElementById("name-user").textContent = data.results[0].name.first + " " + data.results[0].name.last
         document.getElementById("fecha").textContent = new Date(data.results[0].dob.date).toLocaleDateString()
         document.getElementById("edad").textContent = data.results[0].dob.age
@@ -17,10 +13,3 @@ fetch('https://randomuser.me/api/?nat=ES')
 
     }).catch(e => console.log(e));
 
-function modalMapa() {
-    // console.log(new Date("10/03/1994"))
-    // alert("sii")
-    // myModalEl = document.getElementById('exampleModal');
-    // modal = bootstrap.Modal.getInstance(myModalEl);
-    // modal.toggle()
-}
