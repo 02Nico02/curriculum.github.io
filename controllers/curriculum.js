@@ -1,3 +1,13 @@
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 100) {
+        document.querySelector(".go-top-container").classList.add("show-go-top");
+    } else {
+        document.querySelector(".go-top-container").classList.remove("show-go-top");
+    }
+    document.getElementById("navbarToggleExternalContent").classList.remove("show");
+    document.getElementById("icon-btn-nav").classList.remove("fa-caret-up")
+    document.getElementById("icon-btn-nav").classList.add("fa-caret-down")
+}
 
 fetch('https://randomuser.me/api/?nat=ES')
     .then(response => response.json())
@@ -14,8 +24,15 @@ fetch('https://randomuser.me/api/?nat=ES')
     }).catch(e => console.log(e));
 
 
+document.getElementById("btn-nav").addEventListener("click", toggleBtnNav);
 document.getElementById("btnIdiomas").addEventListener("click", () => { toggleList("listIdiomas", "btnIdiomas", "languages") });
 document.getElementById("btnHerramientas").addEventListener("click", () => { toggleList("listHerramientas", "btnHerramientas", "tools") });
+document.querySelector(".go-top-container").addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+});
 
 const data = {
     "languages": [
@@ -78,6 +95,12 @@ const data = {
             "percentage": 25,
         },
     ],
+}
+
+function toggleBtnNav() {
+    document.getElementById("navbarToggleExternalContent").classList.toggle("show")
+    document.getElementById("icon-btn-nav").classList.toggle("fa-caret-up")
+    document.getElementById("icon-btn-nav").classList.toggle("fa-caret-down")
 }
 
 
