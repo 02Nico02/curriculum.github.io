@@ -3,7 +3,10 @@ body {
     padding: 0;
     max-width: 100vw;
     overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 
 .fondo {
     width: 100vw;
@@ -36,6 +39,11 @@ body {
     width: 120px;
     margin-top: 10px;
     margin-right: 5px;
+    transition: 3s;
+}
+
+.col-izquierda {
+    margin-bottom: 30px;
 }
 
 .img-nombre {
@@ -47,6 +55,7 @@ body {
     grid-column: none;
     text-align: center;
     color: #fff;
+    font-family: 'Noto Nastaliq Urdu', serif;
 }
 
 .profecionalismo {
@@ -83,6 +92,18 @@ body {
     color: #6610f2;
     min-width: 17px;
     font-size: 18px;
+}
+
+.redes i {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+#listHerramientas p,
+#listIdiomas p {
+    FONT-WEIGHT: bold;
+    margin-bottom: 0;
 }
 
 .divPerfile {
@@ -172,6 +193,10 @@ body {
     background: #6610f22b;
 }
 
+.progress0 {
+    background: #f2105b7e;
+}
+
 #btnUbi {
     cursor: pointer;
 }
@@ -194,46 +219,18 @@ iframe {
     height: 450px;
 }
 
-.col-derecho {
-    display: none;
-}
 
-.izquierda {
-    display: none;
-}
 
-.min-1000 {
-    display: block;
-}
-
-.max-1000 {
-    display: none;
-}
 
 @media screen and (min-width: 992px) {
 
-    /* .col-izquierda {
-        display: grid;
-        grid-template-columns: min-content;
-        margin: 0;
-        grid-gap: 20px;
-        grid-template-areas: "img-nombre img-nombre"
-            "profecionalismo profecionalismo"
-            "h2DatosPersonales sobreMi"
-            "h2DatosPersonales workExperience"
-            "h2DatosPersonales workExperience"
-            "h2DatosPersonales Academic";
-    } */
-    .col-derecho {
-        display: block;
+    .col-izquierda img {
+        border-radius: 10%;
+        margin-right: 70PX;
     }
 
-    .izquierda {
-        display: block;
-    }
-
-    .min-1000 {
-        display: none;
+    .col-izquierda img:hover {
+        width: 200px;
     }
 
     .img-nombre {
