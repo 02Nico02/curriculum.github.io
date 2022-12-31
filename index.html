@@ -28,6 +28,23 @@
 </head>
 
 <body>
+    <nav class="nav-fixed">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                <a href="#sobreMi">Sobre mí</a>
+                <a href="#datosPersonales">Datos personales</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#workExperience">Experiencia laboral</a>
+                <a href="#Academic">Formación académica</a>
+                <a href="#idiomas">Idiomas</a>
+                <a href="#herramientas">Herramientas</a>
+            </div>
+        </div>
+        <!-- <div class="cuadrado-negro"></div> -->
+        <button id="btn-nav">
+            <i id="icon-btn-nav" class="fa-solid fa-caret-down"></i>
+        </button>
+    </nav>
     <div class="container  col-izquierda">
         <div class="img-nombre">
             <img id="img-user" src="./images/sin-perfil.jpg" alt="Imagen de perfil">
@@ -46,7 +63,7 @@
                 a mi medida. Ahora busco nuevos desafíos, superarme a mí mismo y seguir aprendiendo.
             </p>
         </div>
-        <div class="divDatosPersonales">
+        <div id="datosPersonales" class="divDatosPersonales">
             <div class="tituloContenido">
                 <h5>Datos Personales</h5>
                 <div class="linea"></div>
@@ -92,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div class="divContact">
+        <div id="contacto" class="divContact">
             <div class="tituloContenido">
                 <h5>Contacto</h5>
                 <div class="linea"></div>
@@ -183,7 +200,7 @@
                 </ul>
             </div>
         </div>
-        <div class="divLanguages">
+        <div id="idiomas" class="divLanguages">
             <div class="tituloContenido">
                 <h5>Idiomas</h5>
                 <div class="linea"></div>
@@ -208,7 +225,7 @@
                 <button id="btnIdiomas" type="button" class="btn btn-info btn-sm">Más</button>
             </div>
         </div>
-        <div class="divLanguages">
+        <div id="herramientas" class="divLanguages">
             <div class="tituloContenido">
                 <h5>Herramientas</h5>
                 <div class="linea"></div>
@@ -238,6 +255,9 @@
         <img src="./images/fondo-azul.jpg" alt="Fondo azul">
         <div class="fondo-blanco">
         </div>
+    </div>
+    <div class="go-top-container">
+        <div class="go-top-btn"><i class="fa-solid fa-caret-up"></i></div>
     </div>
     <script src="./controllers/curriculum.js"></script>
 </body>
