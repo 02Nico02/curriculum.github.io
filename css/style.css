@@ -250,7 +250,7 @@ body {
     cursor: pointer;
 }
 
-#btnUbi:hover p {
+#btnUbi p {
     text-decoration-line: underline;
 }
 
@@ -351,12 +351,12 @@ iframe {
 
 @media screen and (min-width: 992px) {
 
-    .col-izquierda img {
+    .img-nombre img {
         border-radius: 10%;
         margin-right: 70PX;
     }
 
-    .col-izquierda img:hover {
+    .img-nombre img:hover {
         margin-right: 8PX;
         width: 200px;
     }
@@ -367,6 +367,14 @@ iframe {
 
     .profecionalismo {
         grid-area: profecionalismo;
+    }
+
+    #btnUbi p {
+        text-decoration-line: none;
+    }
+
+    #btnUbi:hover p {
+        text-decoration-line: underline;
     }
 
     #sobreMi {
