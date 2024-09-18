@@ -14,7 +14,7 @@ Este proyecto fue desarrollado como parte del programa **Argentina Programa 4.0*
 
 ## Cómo visualizar
 
-Puedes ver el currículum en línea a través del siguiente enlace: Currículum en línea.
+Puedes ver el currículum en línea a través del siguiente enlace: https://02nico02.github.io/curriculum.github.io/
 
 Para verlo localmente en tu navegador, simplemente clona este repositorio y abre el archivo `index.html` en tu navegador preferido.
 
